@@ -20,7 +20,7 @@ import java.net.URL;
  */
 public class FetchWeatherTask extends AsyncTask<Void, Void, Boolean>{
 
-    private String TAG = "FetchWeatherTask";
+    private String TAG = FetchWeatherTask.class.getSimpleName();
     HttpURLConnection urlConnection = null;
     BufferedReader reader = null;
     String openWeatherApiKey = "72859d55acf56189d9df6945c87daf84";
